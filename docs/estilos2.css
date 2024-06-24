@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root{
+    --Write: #FFFFFF;
+    --Black: #000000;
+    --Purple: #7F4CA5;
+    --PurpleLigh: #B57EDC;
+    --BlueWrite: #8789f7;
+}
+
+.div__header {
+    margin-top: 15px;
+    max-height: 150px;
+}
+
+.main {
+    height: 100%;
+    padding: 20px;
+    /*border: 2px solid #000000;*/
+}
+
+.div__main-titulo {
+    height: 100%;
+    padding: 10px;
+}
+
+.div__main-titulo-h1 {
+    text-align: center;
+    color: var(--Purple);
+}
+
+.div__main {
+    margin: 20px;
+    height: 100%;
+    /*border: 2px solid #ff0000;*/
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.div__main-img {
+    height: 500px;
+    border-radius: 20px;
+}
+
+.div__main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.div__main-informacion-titulo {
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--Purple);
+    text-align: center;
+    /*background: linear-gradient(to left, #777777, #FF8800);*/
+    border-radius: 20px;
+}
+
+.div__main-informacion-descripcion {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div__botones {
+    height: 100%;
+}
+
+.div__botones-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.div__botones-contenedor-action {
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #777777;
+    color: var(--PurpleLigh);
+    margin: 10px 50px;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.div__botones-contenedor-action:hover {
+    color: var(--PurpleLigh);
+}
+
+.div__main-informacion-descripcion-p {
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+    /*border: 2px solid #000000;*/
+    text-align: center;
+    font-family: 'Times New Roman', Times, serifs;
+    color: var(--PurpleLigh);
+    font-size: 20px;
+}
+
+.section__cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.section__cont h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.section-dificultad, .section-modo {
+    padding: 20px;
+    border-radius: 10px;
+}
+.section-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.section-op, .section-op-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.section-option, .section-option-2 {
+    flex: 1 1 45%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.section-option:hover, .section-option-2:hover {
+    background-color: #e0e0e0;
+}
+@media (min-width: 768px) {
+    .section__cont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-dificultad, .section-modo {
+        flex: 1;
+        max-width: 48%;
+    }
+}
+
+.div__tarifas-titulo {
+    height: 100%;
+    /*border: 2px solid #ff00ff;*/
+    margin: 10px;
+    padding: 10px;
+    color: #FFCC00;
+    /* background: linear-gradient(to left, #777777, #FF8800); */
+    border-radius: 10px;
+}
+
+
+.div__tarifas-precios {
+    height: 100%;
+    /*border: 2px solid #00FFFF;*/
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.span__tarifas {
+    background-color: var(--PurpleLigh);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #000000;
+    display: block;
+}
+
+.div__fotos {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div__fotos-img1 {
+    width: 300px;
+    height: 500px;
+}
+
+.div__fotos-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+i {
+    padding-right: 5px;
+}
+
+.div__contactos b, .div__contactos-iconos p {
+    color: var(--PurpleLigh);
+}
+
+@media only screen and (max-width: 550px){
+    .div__main-informacion-descripcion-p {
+        width: 100%;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .div__main-img {
+        height: 300px;
+    }
+
+    .div__fotos {
+        gap: 0;
+    }
+
+    .div__fotos-img1 {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .div__botones-contenedor-action {
+        padding-top: 11px;
+        height: 40px;
+        font-size: 9.5px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+}
+
+@media only screen and (max-width: 820px){
+    .div__servicios-opciones-lista-op {
+        width: 120px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 830px){
+    .div__servicios-opciones-lista-op {
+        width: 120px;
+        height: 50px;
+    }
+}
+
+.div__ventana-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.div__ventana-modal-contenido {
+    /* background-color: #f2f2f2; */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 80%;
+    max-width: 600px;
+    background-color: var(--Write);
+}
+
+.cerrar {
+    position: relative;
+    z-index: 1;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover, .cerrar:focus {
+    color: var(--Black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.div__ventana-titulo {
+    position: relative;
+    top: 15 px;
+    padding: 15px;
+    border-bottom: 1px solid var(--Black);
+    color: var(--Purple);
+}
+
+.contenedor__form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div__contenedor-img {
+    width: 75px;
+    height: 75px;
+    align-self: center;
+}
+
+.div__contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: contrast(1.75);
+}
+
+.form__formulario {
+    margin: 10px;
+    width: 40%;
+}
+
+.form__furmulario-text {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.selec__tarifa {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    color: #000000;
+}
+
+.input__time {
+    padding: 5px;
+    width: 8.6em;
+    color: #000000;
+}
+
+
+
+.div__ventana-modal-boton {
+    display: flex;
+    justify-content: end;
+}
+
+.button__aceptar {
+    width: 7.5em;
+    height: 2.5em;
+    background-color: var(--Purple);
+    border-radius: 10px;
+    border: 2px solid var(--PurpleLigh);
+    cursor: pointer;
+    line-height: 2;
+    font-size: 18px;
+    color: var(--Write);
+}
+
+.button__aceptar:hover {
+    background-color: #999999;
+}
+
+.button__aceptar a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.div__main-informacion-titulo h2,
+.div__servicio-titulo h2,
+.div__main-titulo-h1 {
+    background-color: var(--Write);
+}
